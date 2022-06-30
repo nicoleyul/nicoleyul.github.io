@@ -24,15 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="hexo,bug解决" />
+  <meta name="keywords" content="MS,模拟计算" />
 
 
-<link rel="canonical" href="http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/">
+<link rel="canonical" href="http://example.com/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/">
 
 
 
   <title>
-搭建blog的error记录 - 杂记 |
+物质结构与性质计算 - MS学习笔记 |
 nicole's blog = </title>
 <meta name="generator" content="Hexo 6.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,23 +60,23 @@ nicole's blog = </title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">搭建blog的error记录
+  <h1 itemprop="name headline">物质结构与性质计算
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2022-06-30 15:13:52">
+  <span class="item" title="Created: 2022-06-30 20:17:44">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">Posted on</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-06-30T15:13:52+08:00">2022-06-30</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-06-30T20:17:44+08:00">2022-06-30</time>
   </span>
   <span class="item" title="Symbols count in article">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>29</span>
+    <span>1.9k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -84,7 +84,7 @@ nicole's blog = </title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>1 mins.</span>
+    <span>2 mins.</span>
   </span>
 </div>
 
@@ -116,7 +116,7 @@ nicole's blog = </title>
 
       </div>
       <div id="imgs" class="pjax">
-          <img src="/assets/computer.jpg">
+          <img src="/assets/wuzhijiegou.jpg">
       </div>
     </header>
     <div id="waves">
@@ -141,12 +141,12 @@ nicole's blog = </title>
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
 <span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/notes/" itemprop="item" rel="index" title="In 杂记"><span itemprop="name">杂记</span></a>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/material-studio/" itemprop="item" rel="index" title="In MS学习笔记"><span itemprop="name">MS学习笔记</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
-  <link itemprop="mainEntityOfPage" href="http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -161,14 +161,31 @@ nicole's blog = </title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="第一章-部署blog到远端"><a class="markdownIt-Anchor" href="#第一章-部署blog到远端">#</a> 第一章  部署 blog 到远端</h2>
-<p>这是主题内容</p>
-<h2 id="第二章"><a class="markdownIt-Anchor" href="#第二章">#</a> 第二章</h2>
-<p>做一个小测试</p>
+    <h1 id="以nacl为例建立晶胞并计算其物理性质"><a class="markdownIt-Anchor" href="#以nacl为例建立晶胞并计算其物理性质">#</a> 以 NaCl 为例建立晶胞并计算其物理性质</h1>
+<h2 id="建立nacl晶胞"><a class="markdownIt-Anchor" href="#建立nacl晶胞">#</a> 建立 NaCl 晶胞</h2>
+<p>依次点击：‘Build-Crystal-Build  Crystal’ 默认的结构空间群：1 P1。这是一个周期性的结构，每 个单元是边长默认为 10Å 的正方体，内部再没有其他对称性。</p>
+<p>设置晶格三边长分别为：‘a：5.64；b：5.64；c：5.64’ 打开：‘Build-Add Atoms’ 调出 Na 元素。回 到 Atoms 面板，在三边 a，b，c 中先后输入’(0, 0, 0)；(0, 0.5, 0.5)；(0.5, 0, 0.5)；(0.5, 0.5, 0)’ 然后再加 Cl 原子，坐标依次为：\‘(0, 0, 0.5)；(0, 0.5, 0)；(0.5, 0, 0)；(0.5,  0.5, 0.5)’</p>
+<p>这时通过’Build-Symmetry-Find Symmetry’功能可以发现此结构的空间群是’FM-3M (OH-5)’  编号是 225。此时没有对称性，可以再逐个删除原子。如果点击 ‘Impose Symmetry’ 为结构加上了对称性之后，原子之间受到对称性的关联，此 时再删除任一原子就会删掉所有同类原子。</p>
+<p>如果已知空间群，建模则很简便。在’Build Crystal’面板的’Enter group’对话框中直 接选取编号为 225 的空间群结构。</p>
+<p>![](E:\blog\source_posts\material studio\picture\1_1.jpg)</p>
+<p>做出来的晶胞并不是最小周期结构。可通过：‘Build-Symmetry-Primitive Cell’   转化为原胞，此时三维图像显示为一个平行六面体结构，仅含一个 Na 原子和一个 Cl 原子。</p>
+<h2 id="计算物理性质"><a class="markdownIt-Anchor" href="#计算物理性质">#</a> 计算物理性质</h2>
+<p>这次我们默认已经是最优化结构，可直接计算单点能。调出计算面板’Modules-CASTEP-Calculation’  ‘Task’选’Energy’，‘Quality’选’Medium’，不选’Metal’。这次’Electronic’ 面板中的’Pseudopotentials’可以选’Ultrasoft’，即超软赝势。'Properties’面板下分别 勾选：‘Band structure’；‘Density of states’并选中下面的’Calculate PDOS’；‘Optical  properties’。'Job control’下选择是在本机还是提交服务器的某个队列计算，设置 合适的核数，点 Run 会提示要不要转化为原胞计算？一般选是，因为原子数越少越节省时间。然后会看到’Job Explorer’区显示已排队等待或直接开始跑程序了。</p>
+<p>计算结束，打开结果文件中的三维结构，会同时显示第一布里渊区，如图，白线是原胞的结构，绿线是第一布里渊区，红线是 K 点取样的计算路径。不需要时可以点鼠标右键，从’Display Style’中勾掉，以免影响其他显示。</p>
+<p>![](E:\blog\source_posts\material studio\picture\1_2.png)</p>
+<p>从’Analysis’中找到’Electron density’, 点击’Import’后 ，电子云密度会加载到结构文件中，显示等高面的分布。在显示设置的’Field’选项中，选’Visable’可显示整个空 间的场分布，选用’Volume’方式可见六面体各个截面上的电场分布。</p>
+<h2 id="分析计算的性质"><a class="markdownIt-Anchor" href="#分析计算的性质">#</a> 分析计算的性质</h2>
+<h3 id="分析analysis-band-structure能带结构"><a class="markdownIt-Anchor" href="#分析analysis-band-structure能带结构">#</a> 分析’Analysis-Band structure’能带结构。</h3>
+<p>同时勾选’DOS’及’Partial’的话，可对比观察电子的能带结构和各个电子壳层的投影态密度，见下图。左边是能带结构，显示带隙为 5.1 eV，是绝缘体。横坐标给出’K-point’的积分路径。G 即’Gamma’点，W,L,K,X 这些布里渊区边界的对称点可以从上图显示的布里渊区中找到。</p>
+<p>右图的电子态密度中，用不同的颜色显示出 s,p,d,f 各个轨道电子的贡献。左图的横坐标单位是电子的波矢，纵坐标是能量（与波的频率相对应），曲线上的每一 个点代表一个量子态，即一支波矢和频率都确定的波。态密度描述的是体系电子全部量子态以能量为坐标轴的分布密度。之所以如此显示，就是让大家观察两者 的关系。当然，也可以单独通过’Density of states’来显示态密度。此时横坐标是常规的水平显示。</p>
+<p>![](E:\blog\source_posts\material studio\picture\1_3.png)</p>
+<h3 id="分析光学性质"><a class="markdownIt-Anchor" href="#分析光学性质">#</a> 分析光学性质</h3>
+<p>可以得到反射、吸收、介电常数等信息。如图 1.1.4 所示， 首先打开的对话框是反射率。横坐标单位根据需要可以选’eV,cm-1 ,nm’。先点击 ‘Calculate’，就可以通过点’View’看到下图所示该材料对电磁波谱的反射性质了。</p>
+<p>![](E:\blog\source_posts\material studio\picture\1_4.png)</p>
 
       <div class="tags">
-          <a href="/tags/hexo/" rel="tag"><i class="ic i-tag"></i> hexo</a>
-          <a href="/tags/bug%E8%A7%A3%E5%86%B3/" rel="tag"><i class="ic i-tag"></i> bug解决</a>
+          <a href="/tags/MS/" rel="tag"><i class="ic i-tag"></i> MS</a>
+          <a href="/tags/%E6%A8%A1%E6%8B%9F%E8%AE%A1%E7%AE%97/" rel="tag"><i class="ic i-tag"></i> 模拟计算</a>
       </div>
   </div>
 
@@ -180,7 +197,7 @@ nicole's blog = </title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2022-06-30 19:56:12" itemprop="dateModified" datetime="2022-06-30T19:56:12+08:00">2022-06-30</time>
+    <time title="Modified: 2022-06-30 21:25:21" itemprop="dateModified" datetime="2022-06-30T21:25:21+08:00">2022-06-30</time>
   </span>
 </div>
 
@@ -193,7 +210,7 @@ nicole's blog = </title>
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/" title="搭建blog的error记录">http://example.com/notes/搭建blog的error记录/</a>
+    <a href="http://example.com/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/" title="物质结构与性质计算">http://example.com/material-studio/物质结构与性质计算/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -212,22 +229,14 @@ nicole's blog = </title>
     <div class="item left">
       
 
-  <a href="/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhpw3lwj20zk0m8gvw.jpg" title="Hello World">
+  <a href="/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/" itemprop="url" rel="prev" data-background-image="&#x2F;assets&#x2F;computer.jpg" title="搭建blog的error记录">
   <span class="type">Previous Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Hello World</h3>
+  <span class="category"><i class="ic i-flag"></i> 杂记</span>
+  <h3>搭建blog的error记录</h3>
   </a>
 
     </div>
     <div class="item right">
-      
-
-  <a href="/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/" itemprop="url" rel="next" data-background-image="&#x2F;assets&#x2F;wuzhijiegou.jpg" title="物质结构与性质计算">
-  <span class="type">Next Post</span>
-  <span class="category"><i class="ic i-flag"></i> MS学习笔记</span>
-  <h3>物质结构与性质计算</h3>
-  </a>
-
     </div>
 </div>
 
@@ -244,11 +253,11 @@ nicole's blog = </title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%83%A8%E7%BD%B2blog%E5%88%B0%E8%BF%9C%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text"> 第一章  部署 blog 到远端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text"> 第二章</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5nacl%E4%B8%BA%E4%BE%8B%E5%BB%BA%E7%AB%8B%E6%99%B6%E8%83%9E%E5%B9%B6%E8%AE%A1%E7%AE%97%E5%85%B6%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8"><span class="toc-number">1.</span> <span class="toc-text"> 以 NaCl 为例建立晶胞并计算其物理性质</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8Bnacl%E6%99%B6%E8%83%9E"><span class="toc-number">1.1.</span> <span class="toc-text"> 建立 NaCl 晶胞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8"><span class="toc-number">1.2.</span> <span class="toc-text"> 计算物理性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E8%AE%A1%E7%AE%97%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.</span> <span class="toc-text"> 分析计算的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90analysis-band-structure%E8%83%BD%E5%B8%A6%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 分析’Analysis-Band structure’能带结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E5%85%89%E5%AD%A6%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 分析光学性质</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li class="active"><a href="/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/" rel="bookmark" title="搭建blog的error记录">搭建blog的error记录</a></li>
+          <li class="active"><a href="/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/" rel="bookmark" title="物质结构与性质计算">物质结构与性质计算</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -325,12 +334,10 @@ nicole's blog = </title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/hello-world/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -352,15 +359,6 @@ nicole's blog = </title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/material-studio/" title="In MS学习笔记">MS学习笔记</a>
 </div>
 
@@ -375,6 +373,15 @@ nicole's blog = </title>
 </div>
 
     <span><a href="/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/" title="搭建blog的error记录">搭建blog的error记录</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
   </ul>
@@ -417,7 +424,7 @@ nicole's blog = </title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'notes/搭建blog的error记录/',
+    path: 'material-studio/物质结构与性质计算/',
     favicon: {
       show: "（●´3｀●）Goooood",
       hide: "(´Д｀)Booooom"
@@ -427,7 +434,7 @@ nicole's blog = </title>
       empty: "We didn't find any results for the search: ${query}",
       stats: "${hits} results found in ${time} ms"
     },
-    valine: {"placeholder":"欢迎提问哦~大家友好交流！"},fancybox: true,
+    valine: true,fancybox: true,
     copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
     ignores : [
       function(uri) {

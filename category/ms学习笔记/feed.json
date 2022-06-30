@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "null",
+    "title": "null • All posts by \"ms学习笔记\" category",
     "description": "",
     "home_page_url": "http://example.com",
     "items": [
@@ -14,25 +14,6 @@
                 "MS",
                 "模拟计算"
             ]
-        },
-        {
-            "id": "http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/",
-            "url": "http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/",
-            "title": "搭建blog的error记录",
-            "date_published": "2022-06-30T07:13:52.000Z",
-            "content_html": "<h2 id=\"第一章-部署blog到远端\"><a class=\"markdownIt-Anchor\" href=\"#第一章-部署blog到远端\">#</a> 第一章  部署 blog 到远端</h2>\n<p>这是主题内容</p>\n<h2 id=\"第二章\"><a class=\"markdownIt-Anchor\" href=\"#第二章\">#</a> 第二章</h2>\n<p>做一个小测试</p>\n",
-            "tags": [
-                "hexo",
-                "bug解决"
-            ]
-        },
-        {
-            "id": "http://example.com/hello-world/",
-            "url": "http://example.com/hello-world/",
-            "title": "Hello World",
-            "date_published": "2022-06-29T14:00:46.978Z",
-            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"markdownIt-Anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"markdownIt-Anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<pre><code class=\"language-bash\">$ hexo new &quot;My New Post&quot;\n</code></pre>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"markdownIt-Anchor\" href=\"#run-server\">#</a> Run server</h3>\n<pre><code class=\"language-bash\">$ hexo server\n</code></pre>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"markdownIt-Anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<pre><code class=\"language-bash\">$ hexo generate\n</code></pre>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"markdownIt-Anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<pre><code class=\"language-bash\">$ hexo deploy\n</code></pre>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
-            "tags": []
         }
     ]
 }
