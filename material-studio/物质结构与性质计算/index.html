@@ -76,7 +76,7 @@ nicole's blog = </title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>1.9k</span>
+    <span>1.6k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -84,7 +84,7 @@ nicole's blog = </title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>2 mins.</span>
+    <span>1 mins.</span>
   </span>
 </div>
 
@@ -163,25 +163,25 @@ nicole's blog = </title>
 
     <h1 id="以nacl为例建立晶胞并计算其物理性质"><a class="markdownIt-Anchor" href="#以nacl为例建立晶胞并计算其物理性质">#</a> 以 NaCl 为例建立晶胞并计算其物理性质</h1>
 <h2 id="建立nacl晶胞"><a class="markdownIt-Anchor" href="#建立nacl晶胞">#</a> 建立 NaCl 晶胞</h2>
-<p>依次点击：‘Build-Crystal-Build  Crystal’ 默认的结构空间群：1 P1。这是一个周期性的结构，每 个单元是边长默认为 10Å 的正方体，内部再没有其他对称性。</p>
-<p>设置晶格三边长分别为：‘a：5.64；b：5.64；c：5.64’ 打开：‘Build-Add Atoms’ 调出 Na 元素。回 到 Atoms 面板，在三边 a，b，c 中先后输入’(0, 0, 0)；(0, 0.5, 0.5)；(0.5, 0, 0.5)；(0.5, 0.5, 0)’ 然后再加 Cl 原子，坐标依次为：\‘(0, 0, 0.5)；(0, 0.5, 0)；(0.5, 0, 0)；(0.5,  0.5, 0.5)’</p>
-<p>这时通过’Build-Symmetry-Find Symmetry’功能可以发现此结构的空间群是’FM-3M (OH-5)’  编号是 225。此时没有对称性，可以再逐个删除原子。如果点击 ‘Impose Symmetry’ 为结构加上了对称性之后，原子之间受到对称性的关联，此 时再删除任一原子就会删掉所有同类原子。</p>
-<p>如果已知空间群，建模则很简便。在’Build Crystal’面板的’Enter group’对话框中直 接选取编号为 225 的空间群结构。</p>
-<p>![](E:\blog\source_posts\material studio\picture\1_1.jpg)</p>
-<p>做出来的晶胞并不是最小周期结构。可通过：‘Build-Symmetry-Primitive Cell’   转化为原胞，此时三维图像显示为一个平行六面体结构，仅含一个 Na 原子和一个 Cl 原子。</p>
+<p>依次点击： <code>Build-Crystal-Build Crystal</code>  默认的结构空间群： <code>1 P1</code> 。这是一个周期性的结构，每 个单元是边长默认为 10Å 的正方体，内部再没有其他对称性。</p>
+<p>设置晶格三边长分别为： <code>a：5.64；b：5.64；c：5.64</code> ，打开： <code>Build-Add Atoms</code>  调出 Na 元素。回到 <code>Atoms</code>  面板，在三边 a，b，c 中先后输入 <code>(0, 0, 0)；(0, 0.5, 0.5)；(0.5, 0, 0.5)；(0.5, 0.5, 0)</code> ，然后再加 Cl 原子，坐标依次为： <code>(0, 0, 0.5)；(0, 0.5, 0)；(0.5, 0, 0)；(0.5,  0.5, 0.5)</code> 。</p>
+<p>这时通过 <code>Build-Symmetry-Find Symmetry</code>  功能可以发现此结构的空间群是 <code>FM-3M(OH-5)</code> ，编号是 225。此时没有对称性，可以再逐个删除原子。如果点击  <code>Impose Symmetry</code> ，为结构加上了对称性之后，原子之间受到对称性的关联，此时再删除任一原子就会删掉所有同类原子。</p>
+<p>如果已知空间群，建模则很简便。在 <code>Build Crystal</code>  面板的 <code>Enter group</code>  对话框中直接选取编号为 225 的空间群结构。</p>
+<p><img data-src="%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_1.jpg" alt=""></p>
+<p>做出来的晶胞并不是最小周期结构。可通过： <code>Build-Symmetry-Primitive Cell</code>  转化为原胞，此时三维图像显示为一个平行六面体结构，仅含一个 Na 原子和一个 Cl 原子。</p>
 <h2 id="计算物理性质"><a class="markdownIt-Anchor" href="#计算物理性质">#</a> 计算物理性质</h2>
-<p>这次我们默认已经是最优化结构，可直接计算单点能。调出计算面板’Modules-CASTEP-Calculation’  ‘Task’选’Energy’，‘Quality’选’Medium’，不选’Metal’。这次’Electronic’ 面板中的’Pseudopotentials’可以选’Ultrasoft’，即超软赝势。'Properties’面板下分别 勾选：‘Band structure’；‘Density of states’并选中下面的’Calculate PDOS’；‘Optical  properties’。'Job control’下选择是在本机还是提交服务器的某个队列计算，设置 合适的核数，点 Run 会提示要不要转化为原胞计算？一般选是，因为原子数越少越节省时间。然后会看到’Job Explorer’区显示已排队等待或直接开始跑程序了。</p>
-<p>计算结束，打开结果文件中的三维结构，会同时显示第一布里渊区，如图，白线是原胞的结构，绿线是第一布里渊区，红线是 K 点取样的计算路径。不需要时可以点鼠标右键，从’Display Style’中勾掉，以免影响其他显示。</p>
-<p>![](E:\blog\source_posts\material studio\picture\1_2.png)</p>
-<p>从’Analysis’中找到’Electron density’, 点击’Import’后 ，电子云密度会加载到结构文件中，显示等高面的分布。在显示设置的’Field’选项中，选’Visable’可显示整个空 间的场分布，选用’Volume’方式可见六面体各个截面上的电场分布。</p>
+<p>这次我们默认已经是最优化结构，可直接计算单点能。调出计算面板 <code>Modules-CASTEP-Calculation</code> ， <code>Task</code>  选 <code>Energy</code> ， <code>Quality</code>  选 <code>Medium</code> ，不选 <code>Metal</code> 。这次 <code>Electronic</code>  面板中的 <code>Pseudopotentials</code>  可以选 <code>Ultrasoft</code> ，即超软赝势。 <code>Properties</code>  面板下分别 勾选： <code>Band structure</code> ； <code>Density of states</code>  并选中下面的 <code>Calculate PDOS</code> ； <code>Optical  properties</code> 。 <code>Job control</code>  下选择是在本机还是提交服务器的某个队列计算，设置 合适的核数，点 Run 会提示要不要转化为原胞计算？一般选是，因为原子数越少越节省时间。然后会看到 <code>Job Explorer</code>  区显示已排队等待或直接开始跑程序了。</p>
+<p>计算结束，打开结果文件中的三维结构，会同时显示第一布里渊区，如图，白线是原胞的结构，绿线是第一布里渊区，红线是 K 点取样的计算路径。不需要时可以点鼠标右键，从 <code>Display Style</code>  中勾掉，以免影响其他显示。</p>
+<p><img data-src="%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_2.png" alt=""></p>
+<p>从 <code>Analysis</code>  中找到 <code>Electron density</code> , 点击 <code>Import</code>  后 ，电子云密度会加载到结构文件中，显示等高面的分布。在显示设置的’Field’选项中，选 <code>Visable</code>  可显示整个空 间的场分布，选用 <code>Volume</code>  方式可见六面体各个截面上的电场分布。</p>
 <h2 id="分析计算的性质"><a class="markdownIt-Anchor" href="#分析计算的性质">#</a> 分析计算的性质</h2>
-<h3 id="分析analysis-band-structure能带结构"><a class="markdownIt-Anchor" href="#分析analysis-band-structure能带结构">#</a> 分析’Analysis-Band structure’能带结构。</h3>
-<p>同时勾选’DOS’及’Partial’的话，可对比观察电子的能带结构和各个电子壳层的投影态密度，见下图。左边是能带结构，显示带隙为 5.1 eV，是绝缘体。横坐标给出’K-point’的积分路径。G 即’Gamma’点，W,L,K,X 这些布里渊区边界的对称点可以从上图显示的布里渊区中找到。</p>
-<p>右图的电子态密度中，用不同的颜色显示出 s,p,d,f 各个轨道电子的贡献。左图的横坐标单位是电子的波矢，纵坐标是能量（与波的频率相对应），曲线上的每一 个点代表一个量子态，即一支波矢和频率都确定的波。态密度描述的是体系电子全部量子态以能量为坐标轴的分布密度。之所以如此显示，就是让大家观察两者 的关系。当然，也可以单独通过’Density of states’来显示态密度。此时横坐标是常规的水平显示。</p>
-<p>![](E:\blog\source_posts\material studio\picture\1_3.png)</p>
+<h3 id="分析能带结构"><a class="markdownIt-Anchor" href="#分析能带结构">#</a> 分析能带结构。</h3>
+<p>点击 <code>Analysis-Band structure</code> ，同时勾选 <code>DOS</code>  及 <code>Partial</code>  的话，可对比观察电子的能带结构和各个电子壳层的投影态密度，见下图。左边是能带结构，显示带隙为 5.1 eV，是绝缘体。横坐标给出 <code>K-point</code>  的积分路径。G 即 <code>Gamma</code>  点，W,L,K,X 这些布里渊区边界的对称点可以从上图显示的布里渊区中找到。</p>
+<p>右图的电子态密度中，用不同的颜色显示出 s,p,d,f 各个轨道电子的贡献。左图的横坐标单位是电子的波矢，纵坐标是能量（与波的频率相对应），曲线上的每一 个点代表一个量子态，即一支波矢和频率都确定的波。态密度描述的是体系电子全部量子态以能量为坐标轴的分布密度。之所以如此显示，就是让大家观察两者 的关系。当然，也可以单独通过 <code>Density of states</code>  来显示态密度。此时横坐标是常规的水平显示。</p>
+<p><img data-src="%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_3.png" alt=""></p>
 <h3 id="分析光学性质"><a class="markdownIt-Anchor" href="#分析光学性质">#</a> 分析光学性质</h3>
-<p>可以得到反射、吸收、介电常数等信息。如图 1.1.4 所示， 首先打开的对话框是反射率。横坐标单位根据需要可以选’eV,cm-1 ,nm’。先点击 ‘Calculate’，就可以通过点’View’看到下图所示该材料对电磁波谱的反射性质了。</p>
-<p>![](E:\blog\source_posts\material studio\picture\1_4.png)</p>
+<p>可以得到反射、吸收、介电常数等信息。如图 1.1.4 所示， 首先打开的对话框是反射率。横坐标单位根据需要可以选 <code>eV,cm-1 ,nm</code> 。先点击  <code>Calculate</code> ，就可以通过点 <code>View</code>  看到下图所示该材料对电磁波谱的反射性质了。</p>
+<p><img data-src="%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_4.png" alt=""></p>
 
       <div class="tags">
           <a href="/tags/MS/" rel="tag"><i class="ic i-tag"></i> MS</a>
@@ -197,7 +197,7 @@ nicole's blog = </title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2022-06-30 21:25:21" itemprop="dateModified" datetime="2022-06-30T21:25:21+08:00">2022-06-30</time>
+    <time title="Modified: 2022-06-30 21:50:30" itemprop="dateModified" datetime="2022-06-30T21:50:30+08:00">2022-06-30</time>
   </span>
 </div>
 
@@ -253,7 +253,7 @@ nicole's blog = </title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5nacl%E4%B8%BA%E4%BE%8B%E5%BB%BA%E7%AB%8B%E6%99%B6%E8%83%9E%E5%B9%B6%E8%AE%A1%E7%AE%97%E5%85%B6%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8"><span class="toc-number">1.</span> <span class="toc-text"> 以 NaCl 为例建立晶胞并计算其物理性质</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8Bnacl%E6%99%B6%E8%83%9E"><span class="toc-number">1.1.</span> <span class="toc-text"> 建立 NaCl 晶胞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8"><span class="toc-number">1.2.</span> <span class="toc-text"> 计算物理性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E8%AE%A1%E7%AE%97%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.</span> <span class="toc-text"> 分析计算的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90analysis-band-structure%E8%83%BD%E5%B8%A6%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 分析’Analysis-Band structure’能带结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E5%85%89%E5%AD%A6%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 分析光学性质</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5nacl%E4%B8%BA%E4%BE%8B%E5%BB%BA%E7%AB%8B%E6%99%B6%E8%83%9E%E5%B9%B6%E8%AE%A1%E7%AE%97%E5%85%B6%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8"><span class="toc-number">1.</span> <span class="toc-text"> 以 NaCl 为例建立晶胞并计算其物理性质</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8Bnacl%E6%99%B6%E8%83%9E"><span class="toc-number">1.1.</span> <span class="toc-text"> 建立 NaCl 晶胞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E7%89%A9%E7%90%86%E6%80%A7%E8%B4%A8"><span class="toc-number">1.2.</span> <span class="toc-text"> 计算物理性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E8%AE%A1%E7%AE%97%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.</span> <span class="toc-text"> 分析计算的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E8%83%BD%E5%B8%A6%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 分析能带结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E5%85%89%E5%AD%A6%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 分析光学性质</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -369,19 +369,19 @@ nicole's blog = </title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/notes/" title="In 杂记">杂记</a>
 </div>
 
-    <span><a href="/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/" title="搭建blog的error记录">搭建blog的error记录</a></span>
+    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/notes/" title="In 杂记">杂记</a>
 </div>
 
-    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/" title="搭建blog的error记录">搭建blog的error记录</a></span>
   </li>
 
   </ul>
