@@ -10,7 +10,10 @@
             "title": "搭建blog的error记录",
             "date_published": "2022-06-30T07:13:52.000Z",
             "content_html": "<h2 id=\"第一章-部署blog到远端\"><a class=\"markdownIt-Anchor\" href=\"#第一章-部署blog到远端\">#</a> 第一章  部署 blog 到远端</h2>\n<p>这是主题内容</p>\n<h2 id=\"第二章\"><a class=\"markdownIt-Anchor\" href=\"#第二章\">#</a> 第二章</h2>\n<p>做一个小测试</p>\n",
-            "tags": []
+            "tags": [
+                "hexo",
+                "bug解决"
+            ]
         },
         {
             "id": "http://example.com/hello-world/",

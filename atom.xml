@@ -4,6 +4,8 @@
     <title></title>
     <link href="http://example.com" />
     <updated>2022-06-30T07:13:52.000Z</updated>
+    <category term="hexo" />
+    <category term="bug解决" />
     <entry>
         <id>http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/</id>
         <title>搭建blog的error记录</title>
@@ -13,6 +15,8 @@
 &lt;h2 id=&#34;第二章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第二章&#34;&gt;#&lt;/a&gt; 第二章&lt;/h2&gt;
 &lt;p&gt;做一个小测试&lt;/p&gt;
 </content>
+        <category term="hexo" />
+        <category term="bug解决" />
         <updated>2022-06-30T07:13:52.000Z</updated>
     </entry>
     <entry>
