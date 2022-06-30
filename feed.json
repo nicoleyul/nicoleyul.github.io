@@ -5,8 +5,8 @@
     "home_page_url": "http://example.com",
     "items": [
         {
-            "id": "http://example.com/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/",
-            "url": "http://example.com/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/",
+            "id": "http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/",
+            "url": "http://example.com/notes/%E6%90%AD%E5%BB%BAblog%E7%9A%84error%E8%AE%B0%E5%BD%95/",
             "title": "搭建blog的error记录",
             "date_published": "2022-06-30T07:13:52.000Z",
             "content_html": "<h2 id=\"第一章-部署blog到远端\"><a class=\"markdownIt-Anchor\" href=\"#第一章-部署blog到远端\">#</a> 第一章  部署 blog 到远端</h2>\n<p>这是主题内容</p>\n<h2 id=\"第二章\"><a class=\"markdownIt-Anchor\" href=\"#第二章\">#</a> 第二章</h2>\n<p>做一个小测试</p>\n",
