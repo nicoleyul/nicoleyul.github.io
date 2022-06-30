@@ -4,10 +4,10 @@
     <title></title>
     <link href="http://example.com" />
     <updated>2022-06-30T12:17:44.000Z</updated>
-    <category term="MS" />
-    <category term="模拟计算" />
     <category term="hexo" />
     <category term="bug解决" />
+    <category term="MS" />
+    <category term="模拟计算" />
     <entry>
         <id>http://example.com/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97/</id>
         <title>物质结构与性质计算</title>
@@ -18,21 +18,21 @@
 &lt;p&gt;设置晶格三边长分别为： &lt;code&gt;a：5.64；b：5.64；c：5.64&lt;/code&gt; ，打开： &lt;code&gt;Build-Add Atoms&lt;/code&gt;  调出 Na 元素。回到 &lt;code&gt;Atoms&lt;/code&gt;  面板，在三边 a，b，c 中先后输入 &lt;code&gt;(0, 0, 0)；(0, 0.5, 0.5)；(0.5, 0, 0.5)；(0.5, 0.5, 0)&lt;/code&gt; ，然后再加 Cl 原子，坐标依次为： &lt;code&gt;(0, 0, 0.5)；(0, 0.5, 0)；(0.5, 0, 0)；(0.5,  0.5, 0.5)&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;这时通过 &lt;code&gt;Build-Symmetry-Find Symmetry&lt;/code&gt;  功能可以发现此结构的空间群是 &lt;code&gt;FM-3M(OH-5)&lt;/code&gt; ，编号是 225。此时没有对称性，可以再逐个删除原子。如果点击  &lt;code&gt;Impose Symmetry&lt;/code&gt; ，为结构加上了对称性之后，原子之间受到对称性的关联，此时再删除任一原子就会删掉所有同类原子。&lt;/p&gt;
 &lt;p&gt;如果已知空间群，建模则很简便。在 &lt;code&gt;Build Crystal&lt;/code&gt;  面板的 &lt;code&gt;Enter group&lt;/code&gt;  对话框中直接选取编号为 225 的空间群结构。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/ms1_1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;做出来的晶胞并不是最小周期结构。可通过： &lt;code&gt;Build-Symmetry-Primitive Cell&lt;/code&gt;  转化为原胞，此时三维图像显示为一个平行六面体结构，仅含一个 Na 原子和一个 Cl 原子。&lt;/p&gt;
 &lt;h2 id=&#34;计算物理性质&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算物理性质&#34;&gt;#&lt;/a&gt; 计算物理性质&lt;/h2&gt;
 &lt;p&gt;这次我们默认已经是最优化结构，可直接计算单点能。调出计算面板 &lt;code&gt;Modules-CASTEP-Calculation&lt;/code&gt; ， &lt;code&gt;Task&lt;/code&gt;  选 &lt;code&gt;Energy&lt;/code&gt; ， &lt;code&gt;Quality&lt;/code&gt;  选 &lt;code&gt;Medium&lt;/code&gt; ，不选 &lt;code&gt;Metal&lt;/code&gt; 。这次 &lt;code&gt;Electronic&lt;/code&gt;  面板中的 &lt;code&gt;Pseudopotentials&lt;/code&gt;  可以选 &lt;code&gt;Ultrasoft&lt;/code&gt; ，即超软赝势。 &lt;code&gt;Properties&lt;/code&gt;  面板下分别 勾选： &lt;code&gt;Band structure&lt;/code&gt; ； &lt;code&gt;Density of states&lt;/code&gt;  并选中下面的 &lt;code&gt;Calculate PDOS&lt;/code&gt; ； &lt;code&gt;Optical  properties&lt;/code&gt; 。 &lt;code&gt;Job control&lt;/code&gt;  下选择是在本机还是提交服务器的某个队列计算，设置 合适的核数，点 Run 会提示要不要转化为原胞计算？一般选是，因为原子数越少越节省时间。然后会看到 &lt;code&gt;Job Explorer&lt;/code&gt;  区显示已排队等待或直接开始跑程序了。&lt;/p&gt;
 &lt;p&gt;计算结束，打开结果文件中的三维结构，会同时显示第一布里渊区，如图，白线是原胞的结构，绿线是第一布里渊区，红线是 K 点取样的计算路径。不需要时可以点鼠标右键，从 &lt;code&gt;Display Style&lt;/code&gt;  中勾掉，以免影响其他显示。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/ms1_2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;从 &lt;code&gt;Analysis&lt;/code&gt;  中找到 &lt;code&gt;Electron density&lt;/code&gt; , 点击 &lt;code&gt;Import&lt;/code&gt;  后 ，电子云密度会加载到结构文件中，显示等高面的分布。在显示设置的’Field’选项中，选 &lt;code&gt;Visable&lt;/code&gt;  可显示整个空 间的场分布，选用 &lt;code&gt;Volume&lt;/code&gt;  方式可见六面体各个截面上的电场分布。&lt;/p&gt;
 &lt;h2 id=&#34;分析计算的性质&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分析计算的性质&#34;&gt;#&lt;/a&gt; 分析计算的性质&lt;/h2&gt;
 &lt;h3 id=&#34;分析能带结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分析能带结构&#34;&gt;#&lt;/a&gt; 分析能带结构。&lt;/h3&gt;
 &lt;p&gt;点击 &lt;code&gt;Analysis-Band structure&lt;/code&gt; ，同时勾选 &lt;code&gt;DOS&lt;/code&gt;  及 &lt;code&gt;Partial&lt;/code&gt;  的话，可对比观察电子的能带结构和各个电子壳层的投影态密度，见下图。左边是能带结构，显示带隙为 5.1 eV，是绝缘体。横坐标给出 &lt;code&gt;K-point&lt;/code&gt;  的积分路径。G 即 &lt;code&gt;Gamma&lt;/code&gt;  点，W,L,K,X 这些布里渊区边界的对称点可以从上图显示的布里渊区中找到。&lt;/p&gt;
 &lt;p&gt;右图的电子态密度中，用不同的颜色显示出 s,p,d,f 各个轨道电子的贡献。左图的横坐标单位是电子的波矢，纵坐标是能量（与波的频率相对应），曲线上的每一 个点代表一个量子态，即一支波矢和频率都确定的波。态密度描述的是体系电子全部量子态以能量为坐标轴的分布密度。之所以如此显示，就是让大家观察两者 的关系。当然，也可以单独通过 &lt;code&gt;Density of states&lt;/code&gt;  来显示态密度。此时横坐标是常规的水平显示。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/ms1_3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;分析光学性质&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分析光学性质&#34;&gt;#&lt;/a&gt; 分析光学性质&lt;/h3&gt;
 &lt;p&gt;可以得到反射、吸收、介电常数等信息。如图 1.1.4 所示， 首先打开的对话框是反射率。横坐标单位根据需要可以选 &lt;code&gt;eV,cm-1 ,nm&lt;/code&gt; 。先点击  &lt;code&gt;Calculate&lt;/code&gt; ，就可以通过点 &lt;code&gt;View&lt;/code&gt;  看到下图所示该材料对电磁波谱的反射性质了。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/1_4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/_posts/material-studio/%E7%89%A9%E8%B4%A8%E7%BB%93%E6%9E%84%E4%B8%8E%E6%80%A7%E8%B4%A8%E8%AE%A1%E7%AE%97.assets/ms1_4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
         <category term="MS" />
         <category term="模拟计算" />
