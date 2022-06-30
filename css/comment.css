@@ -273,13 +273,13 @@
   background-color: var(--color-grey);
 }
 .v .item .tag.master {
-  background-color: var(--color-orange);
+  background-color: #855194;
 }
 .v .item .tag.friend {
-  background-color: var(--color-aqua);
+  background-color: #a77c59;
 }
 .v .item .tag.investor {
-  background-color: var(--color-pink);
+  background-color: #ed6ea0;
 }
 .v .item .at {
   color: var(--primary-color);
